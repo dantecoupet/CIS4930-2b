@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "smack.h"
 #include <stdbool.h>
 
 int isPrime(int);
@@ -28,5 +28,6 @@ int isPrime(int n)
                 if(n % dev == 0) { return false; }
                 dev++;
         }
+        assert(dev <= n);
         return true;
 }

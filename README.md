@@ -7,7 +7,7 @@ in this repo, there is a program called primes.c
   this is what i will be testing my assertions on.
 
 
-after asserting for primes-broken.c:
+after asserting for primes-broken.c: smack --timing-annotations --unroll 10 primes.c
 SMACK program verifier version 2.6.0
 /usr/local/share/smack/lib/smack.c(45,1): This assertion can fail
 Execution trace:
@@ -50,6 +50,6 @@ Execution trace:
 
 SMACK found an error.
 
-after asserting for primes-fixed.c:
+after asserting for primes-fixed.c: smack --timing-annotations --unroll 10 primes.c
 SMACK program verifier version 2.6.0
-SMACK found no errors with unroll bound 1.
+SMACK found no errors with unroll bound 10.

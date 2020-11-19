@@ -1,22 +1,23 @@
 #include <stdio.h>
+#include "smack.h"
 #include <stdbool.h>
 
 int isPrime(int);
 
 int main(void)
 {
-        int num = 2;
-        int max;
+	int num = 2;
+	int max;
 
-        printf("Input Maximum Prime: ");
-        scanf("%d", &max);
+	printf("Input Maximum Prime: ");
+	scanf("%d", &max);
 
-        while ( num < max )
-        {
-                if(isPrime(num)) { printf("%d\n", num); }
-                num++;
-        }
-        return 0;
+	while ( num < max )
+	{
+		if(isPrime(num)) { printf("%d\n", num); }
+		num++;
+	}
+	return 0;
 }
 
 int isPrime(int n)
@@ -27,5 +28,6 @@ int isPrime(int n)
         {
                 if((n % dev) == 0) { return false; }
         }
-        return true;
+	assert(dev <= n);
+	return true;
 }

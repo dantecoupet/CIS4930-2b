@@ -1,10 +1,10 @@
 # CIS4930-2b
 swag
 
-here is a link to the repo for the code that I am testing - https://github.com/steven-schronk/C-Programming-Examples.git\
+here is a link to the repo for the code that I am testing - https://github.com/steven-schronk/C-Programming-Examples.git
 
 in this repo, there is a program called primes.c\
-this is what i will be testing my assertions on.\
+this is what i will be testing my assertions on.
 
 
 after asserting for primes-broken.c: smack --timing-annotations --unroll 10 primes.c\
@@ -52,4 +52,4 @@ SMACK found an error.
 
 after asserting for primes-fixed.c: smack --timing-annotations --unroll 10 primes.c\
 SMACK program verifier version 2.6.0\
-SMACK found no errors with unroll bound 10.\
+SMACK found no errors with unroll bound 10.

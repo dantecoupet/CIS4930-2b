@@ -1,6 +1,7 @@
 #include "memory.h"
 #include "input.h"
 #include "stdio.h"
+#include "smack.h"
 #include "stdlib.h"
 
 int getsize(const char *msg, const char *errmsg)

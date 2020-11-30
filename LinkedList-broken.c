@@ -91,7 +91,7 @@ void removeElement(LinkedList *list, int removeElement) {
         }
         prev = prev->next;
     }
-    assert(prev->element <= removeElement);
+    assert(prev->element >= removeElement);
 }
 
 int contains(LinkedList *list, int e) {

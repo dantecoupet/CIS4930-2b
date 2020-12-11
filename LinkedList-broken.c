@@ -52,6 +52,7 @@ LinkedList *initLinkedList(int e) {
     LinkedList *linkedList = (LinkedList *) malloc(sizeof(LinkedList));
     linkedList->head = initNode(e);
     linkedList->size = 0;
+    assert(size > 0);
     return linkedList;
 }
 
@@ -91,7 +92,6 @@ void removeElement(LinkedList *list, int removeElement) {
         }
         prev = prev->next;
     }
-    assert(prev->element >= removeElement);
 }
 
 int contains(LinkedList *list, int e) {
